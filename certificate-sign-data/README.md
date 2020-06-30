@@ -10,7 +10,7 @@ Secure credential management remains a challenge in the public cloud.  Azure Key
 
 ### Resources
 * A managed identity assigned to a resource running in Azure
-* An instance of Azure Key Vault where managed identity has been granted the [Get, Sign, and Verify permissions](https://docs.microsoft.com/en-us/azure/key-vault/general/secure-your-key-vault)
+* An instance of Azure Key Vault where managed identity has been granted the [Get Key, Get Certificate, Sign, and Verify permissions](https://docs.microsoft.com/en-us/azure/key-vault/general/secure-your-key-vault)
 * A client certificate that has been [imported](https://docs.microsoft.com/en-us/azure/key-vault/certificates/tutorial-import-certificate) or created in Azure Key Vault.
 
 ## Setup

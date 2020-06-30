@@ -9,7 +9,7 @@ Secure credential management remains a challenge in the public cloud.  Azure Key
 
 ### Resources
 * A managed identity assigned to a resource running in Azure
-* An instance of Azure Key Vault where managed identity has been granted the [GetSecret permission](https://docs.microsoft.com/en-us/azure/key-vault/general/secure-your-key-vault)
+* An instance of Azure Key Vault where managed identity has been granted the [Get Secret and Get Certificate permissions](https://docs.microsoft.com/en-us/azure/key-vault/general/secure-your-key-vault)
 * A client certificate that has been [imported](https://docs.microsoft.com/en-us/azure/key-vault/certificates/tutorial-import-certificate) or created in Azure Key Vault and has been configured with a content type of PEM
 * A standard Azure AD [service principal](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals) which has been configured to use the (certificate for authentication)[https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#certificates-and-secrets].
 

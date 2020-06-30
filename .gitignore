@@ -1,2 +1,5 @@
 # Ignore Visual Studio code artifacts
 *.code-workspace
+
+# Ignore virtual environments
+env
