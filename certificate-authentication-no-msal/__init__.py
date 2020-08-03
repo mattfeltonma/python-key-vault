@@ -71,7 +71,7 @@ def obtain_access_token(key_vault_url, msi_credential, certificate_name, tenant_
     crypto_client = CryptographyClient(key, credential=msi_credential)
     data_hash = hashlib.sha256(bytes((encoded_header + '.' + encoded_claims),'UTF-8')).digest()
         
-    # Use Key Vault to calculate a signature using RSASSA-PKCS1-v1_5 using SHA-512
+    # Use Key Vault to calculate a signature using RSASSA-PKCS1-v1_5 using SHA-256
     jws_signature = (crypto_client.sign(SignatureAlgorithm.rs256, data_hash)).signature
     encoded_jws_signature = (base64.urlsafe_b64encode(jws_signature)).decode('UTF-8').rstrip('=')
     assertion = encoded_header + '.' + encoded_claims + '.' + encoded_jws_signature
